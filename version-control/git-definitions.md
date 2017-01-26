@@ -1,7 +1,5 @@
 # Git Definitions
 
-**Instructions: ** Define each of the following Git concepts.
-
 * What is version control?  Why is it useful?
 	*Version control helps to keep different software systems organized. 
 * What is a branch and why would you use one?
@@ -10,3 +8,5 @@
 	*Commits are meaningful messages that indicate changes to repositories
 * What is a merge conflict?
 	*merging is integrating another branch into the branch you are working on. Conflicts often happen when merging two branches. 
+
+	wahoo!
