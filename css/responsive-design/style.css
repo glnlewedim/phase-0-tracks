@@ -13,13 +13,26 @@ cite {
   list-style-type: none;
   padding-left: 0px;
 }
+@media screen and (max-width: 500px) {
+  #external-links {
+  padding: 70px;
+  }
+}
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
+
+#sidebar {
+  width: 150%;
+
+}
 img {
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  img {
+  width: 50%;
 
 figure {
   margin-left: 0px;
@@ -30,3 +43,19 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+body {
+  max-width: 900%;
+}
+
+main {
+  width: 756px;
+  float: right;
+
+}
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
