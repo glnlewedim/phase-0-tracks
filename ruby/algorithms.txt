@@ -1,0 +1,37 @@
+-Wait for the doors of the elevator to open:
+	-If doors open:
+		- Walk onto the elevator
+    - If you hear someone behind you:
+        - Wait for them to get on the elevator.
+	- Ask them what floor they need to go on.
+    - If you do not hear anyone:
+        - Let the doors close. 
+x=(floor you need) - (floor you're on)
+	- If x=0, end
+		-Else locate the elevator buttons 
+	-If x > 0:
+		-Click a button above
+	-Else:
+		-Click a button below
+End
+
+How to Answer and Transfer the Phones at work
+
+-Wait for the phone to ring:
+	-If phone rings:
+		-Pick up the phone and say "Hi, Office of Congresswoman Alma Adams. Gloria speaking, how can I help you?"
+	-If they want to speak with Barbara: 
+	-Ask them to hold
+	-Hit transfer
+	-Type 090
+	-Hang up
+
+	-If Barbra is unavailable:
+	-Ask to take a message
+	-Grab a note card
+	-Write down the message
+	-Hang up
+
+End
+
+	- 
