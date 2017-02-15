@@ -1,5 +1,33 @@
+a {
+  color: #9ECC27;
+}
 body {
-	text-align: center;
-	background-color: blue;
-	color: white;
+  max-width: 85%;
+  margin: 0 auto;
+  background-image: url(http://ichef.bbci.co.uk/news/660/cpsprodpb/C029/production/_94639194_c8963a76-4f32-4f8d-8287-ef0ace9dd661.jpg);
+  color: #333;
+  font-family: "Georgia", serif;
+}
+header, footer {
+  background-color: #FF5337;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #FF5337;
+}
+
+.column-1 {
+  background-color: #7C90B2;
+  max-width: 65%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column-2 {
+  background-color: #4A8DFF;
+  max-width: 30%;
+  display: inline-block;
+  vertical-align: top;
 }

@@ -23,4 +23,7 @@ if
 elsif 	
 	(age1 != age2)&&(age1 !=age3)&&(garlic_bread == "no")&&(health == "no")
 	puts "almost certainly a vampire"
+elsif (age1 != age2)&&(age1==age3)&&(garlic_bread=="no") || (health=="no")
+	puts "probably a vampire"
+	
 end
