@@ -7,7 +7,7 @@ puts "Whats your volume level (1-10)?"
 puts "What is your fur color?"
   color=gets.chomp
 
-puts "are you a good candidate for adoption? (true or false)"
+puts "are you a good candidate for adoption? (good or bad)"
   candidate=gets.chomp
 
 puts "estimated age"
