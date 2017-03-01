@@ -36,9 +36,7 @@ class Santa
   end
     
   #release2
-  def celebrate_birthday (year)
-    puts "I am #{age} years old"
-    year
+  def celebrate_birthday 
     @age += 1
   end
     
@@ -67,10 +65,10 @@ end
 santa_claus = Santa.new("female", "danish")
 santa_claus.speak
 santa_claus.eat_milk_and_cookies("chocolate chip")
-santa_claus.celebrate_birthday.new "#{age}"
+santa_claus.celebrate_birthday
 santa_claus.get_mad_at ("Dasher")
 santa_claus.gender = "greek"
-santa_claus.age
+santa_claus.age (50)
 santa_claus.ethnicity
 
 #release 4
