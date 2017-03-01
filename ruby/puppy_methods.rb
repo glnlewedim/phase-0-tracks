@@ -1,81 +1,63 @@
-class Santa
-  attr_reader :ethnicity
-  attr_accessor :gender, :age
-  def initialize (gender, ethnicity)
-    @gender = gender
-    @ethnicity = ethnicity
-    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = 0
-    puts "Initializing Santa instance..."
+class Puppy
+def initialize
+		puts "Initializing new puppy instance ..."
+  end 
+  def fetch(toy)
+    puts "I brought back the #{toy}!"
+    toy
   end
-    
-  def speak
-    puts "Ho, ho, ho! Haaaappy holidays!"
+def speak(num)
+  	num.times do 
+  	  puts "Woof!"
+  	  end
+    num
+  	end
+ def dog_years (year)
+ 	puts year*7
+ 	year
+ end
+
+ def roll_over 
+  	puts "Puppy *rolls over*"
   end
-  
-  def eat_milk_and_cookies(type)
-    puts "That was a good #{type}"
-    type
-  end
-  
-  def jolliness(level)
-    puts "My Jolly level is #{level}"
-    level
+def Play_Dead (seconds)
+    puts "This pup can play dead for #{seconds} seconds, unbelivable!"
+    seconds
   end
 
-  def Amount_of_presents (amount)
-    puts "I usually give a #{amount} number of presents"
-    amount
-  end
-
-  #release2
-  def celebrate_birthday
-    @age += 1
-  end
-    
-  def get_mad_at (name)
-    @reindeer_ranking.each do |x|
-      if name == x
-      @reindeer_ranking.delete(x)
-      @reindeer_ranking.push(x)
-      end
-    end
-    @reindeer_ranking
-  end
-    
-  #part of release4
-  def rand_birthday
-    @age = rand(140)
-  end
-
+puppy = Puppy.new
+puppy.fetch("ball")
+puppy.roll_over
+puppy.speak (2)
+puppy.dog_years (5)
+puppy.Play_Dead (35)
 end
 
-#release 0
-santa_claus = Santa.new("male", "dutch")
-santa_claus.speak
-santa_claus.eat_milk_and_cookies("snickerdoodle")
+#new class
 
-#do the thing
-p santa_claus.jolliness (50)
-p santa_claus.Amount_of_presents ("large")
-#release 2
-p santa_claus.celebrate_birthday
-p santa_claus.get_mad_at("Dasher")
-p santa_claus.gender = "greek"
+class Make_dinner
+def initialize
+	puts "Initializing Make_dinner instance..."
+end
 
-#additional tests
-p santa_claus.age
-p santa_claus.ethnicity
+def main_dish (dish)
+	puts "You are making #{dish} for dinner"
+end
 
-#release 4
-santas = []
-genders = ["agender", "female", "male", "transexual", "bigender", "androgynous", "cisgender"]
-ethnicities = ["tai", "black", "latino", "greek", "arabian", "chinese"]
-50.times do |i|
-  santas << Santa.new(genders.sample, ethnicities.sample)
-  puts "There are now #{santas.count} instances in the array."
-  puts santas[i]
-  puts santas[i].gender
-  puts santas[i].ethnicity
-  puts santas[i].rand_birthday
+def table_setting 
+	puts "Make sure you add forks!"
+end
+end
+
+dinner_array = []
+
+50.times do 
+	dinner = Make_dinner.new
+	dinner_array << dinner
+end
+
+dinner_array.each do |i|
+	i.main_dish ("chicken")
+	i.table_setting
+	
 end

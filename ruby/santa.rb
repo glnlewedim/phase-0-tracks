@@ -14,7 +14,7 @@ class Santa
   end
   
   def eat_milk_and_cookies(type)
-    puts "That was a good #{type}"
+    puts "That was a good #{type} cookie"
     type
   end
   
@@ -43,11 +43,6 @@ class Santa
     @reindeer_ranking
   end
     
-  #setter method
-  #def gender=(new_gender)
-    #@gender = new_gender
-  #end
-    
   #part of release4
   def rand_birthday
     @age = rand(140)
@@ -56,9 +51,9 @@ class Santa
 end
 
 #release 0
-santa_claus = Santa.new("male", "dutch")
+santa_claus = Santa.new("male", "tai")
 santa_claus.speak
-santa_claus.eat_milk_and_cookies("snickerdoodle")
+santa_claus.eat_milk_and_cookies("Chocolate Chip")
 
 #do the thing
 p santa_claus.jolliness (50)
