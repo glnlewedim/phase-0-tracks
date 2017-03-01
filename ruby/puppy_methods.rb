@@ -61,3 +61,6 @@ dinner_array.each do |i|
 	i.table_setting
 	
 end
+dinner_array.each do |dinner|
+  p dinner
+end
