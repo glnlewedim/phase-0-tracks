@@ -27,7 +27,7 @@ class GuessingGame
 	end
 end
 
-def input_word
+def get_word
 	@answer = gets.chomp.to_s.downcase
 	@word = @answer.split(//)
 	@hash_word = Hash [@word.collect { |char| [char, "_"]}]
@@ -73,7 +73,7 @@ puts "Hello! Congrats, you have just entered the most amazing game. Guess what w
 game = GuessingGame.new
 
 puts "Let's get started! Please enter a word"
-game.input_word
+game.get_word
 game.max_guess = game.answer.length + 2
 
 until game.game_over == true || game.max_guess == 0 do
