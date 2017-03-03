@@ -11,11 +11,15 @@ puts "are you a good candidate for adoption? (good or bad)"
   candidate=gets.chomp
 
 puts "estimated age"
-  age=gets.chomp.to_i
-  #age=nil
-  if age==0
-     age= "N/A"
-    
+  age=gets.chomp
+  if age.empty?
+     age = nil
+  else
+  	age = age.to_i
   end
+
+  if age == nil
+  	age = "n/a"
+ end
 
 puts "Hey there! Your name is #{name}, you are a noise level of #{volume}, your fur color is #{color}, you are a #{candidate} candidate, and you are #{age} years old! Welcome!"
