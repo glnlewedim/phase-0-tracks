@@ -10,12 +10,6 @@ class TodoList
 	def add_item (item)
 		@list << item
 
-<<<<<<< HEAD
-	end
-=======
-	end	
->>>>>>> master
-
 	def delete_item (item)
 		@list.delete ("do the dishes")
 
