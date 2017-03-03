@@ -67,19 +67,19 @@ class GuessingGame
 end
 
 #user interface
-puts "Hello! Congrats, you have just entered the most amazing game. Guess what word they're thinking of!"
-game = GuessingGame.new
-puts "Let's get started! Please enter a word"
-game.input_word
-game.max_guess = game.answer.length + 2
-until game.game_over == true || game.max_guess == 0 do
-    puts "Please, enter a letter for your guess!!!!"
-guess = gets.chomp.to_s.downcase
-game.value_update(guess)
-game.feedback_printer
-game.repeat_count (guess)
-puts game.winning_checker
-end
-if game.max_guess == 0 then 
-    puts "Yay! Your game is over. Come back and play soon!!"
-end
+#puts "Hello! Congrats, you have just entered the most amazing game. Guess what word they're thinking of!"
+#game = GuessingGame.new
+#puts "Let's get started! Please enter a word"
+#game.input_word
+#game.max_guess = game.answer.length + 2
+#until game.game_over == true || game.max_guess == 0 do
+ #   puts "Please, enter a letter for your guess!!!!"
+#guess = gets.chomp.to_s.downcase
+#game.value_update(guess)
+#game.feedback_printer
+#game.repeat_count (guess)
+#puts game.winning_checker
+#end
+#if game.max_guess == 0 then 
+ #   puts "Yay! Your game is over. Come back and play soon!!"
+#end
