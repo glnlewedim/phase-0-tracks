@@ -1,5 +1,5 @@
 class TodoList
-	def initialize (list)
+	def initialize(list)
 		@list = list
 	end
 
@@ -7,21 +7,15 @@ class TodoList
 		@list
 	end
 
-	def add_item (item)
+	def add_item(item)
 		@list << item
-
-<<<<<<< HEAD
-	end
-=======
-	end	
->>>>>>> master
-
-	def delete_item (item)
-		@list.delete ("do the dishes")
-
 	end
 
-	def get_item (index)
+	def delete_item(item)
+		@list.delete("do the dishes")
+	end
+
+	def get_item(index)
 		@list[index]
 	end
 end
