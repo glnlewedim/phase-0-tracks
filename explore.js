@@ -7,3 +7,13 @@
 //return the reversed string
 //print word by printing the function and passing it a word
 
+function reverse(string) {
+	var x = '';
+	for (var i = string.length -1; i>=0; i--)
+		x += string[i];
+	return x;
+}
+
+if (1==1){
+console.log(reverse('hello'));
+}
