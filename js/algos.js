@@ -73,6 +73,29 @@ function longest_string(arr) {
 	  //call longest_string function on that variable and print
 
 function random_arr(int) {
-	var ran_arr = [];
+	var random_arr = [];
 	var alpha = "abcdefghijklmnopqrstuvwxyz"
+	var text
+for(var i=0; i < int; i++) {
+	var new_alpha
+	for (var n=0; n < 25; n++) {
+	  new_alpha += alpha.charAt(Math.floor(Math.random() * 25) + 1);
+	}
+	text = new_alpha.substr((Math.floor(Math.random() * 25) + 1), (Math.floor(Math.random() * 10) + 1));
+    random_arr.push(text);
+  }
+  return random_arr;
+}
+
+
+//calling release 0
+console.log(longest_string(word_arr))
+
+//calling release 1
+console.log(find_match(pairs_1,pairs_2))
+console.log(find_match(pairs_1,pairs_3));
+for (i=0; i <10; i++) {
+	var new_arr = random_arr(7);
+	console.log(new_arr);
+	console.log(longest_string(new_arr));
 }
