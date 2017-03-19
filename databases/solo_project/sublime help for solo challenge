@@ -1,0 +1,22 @@
+CREATE TABLE Party_Affiliation (
+  house_or_senate_id INTEGER PRIMARY KEY,
+  Affiliation VARCHAR (255),
+  Visibility BOOLEAN
+);
+
+CREATE TABLE Politician (
+	id integer primary key,
+  	name VARCHAR(255),
+  	age INT,
+    house_or_senate_id INT,
+  FOREIGN KEY (house_or_senate_id) REFERENCES Party_Affilication(house_or_senate_id)
+  
+);
+
+INSERT INTO Politician (name, age, house_or_senate_id) VALUES ("Elizabeth Warren", 67, 1);
+INSERT INTO Politician (name, age, house_or_senate_id) VALUES ("Cory Booker", 47, 1);
+INSERT INTO Politician (name, age, house_or_senate_id) VALUES ("Tim Kaine", 59, 2);
+
+INSERT INTO Party_Affiliation (house_or_senate_id, Affiliation, visibility) VALUES (1, "Democrat", "true");
+INSERT INTO Party_Affiliation (house_or_senate_id, Affiliation, visibility) VALUES (1, "Democrat", "true");
+INSERT INTO Party_Affiliation (house_or_senate_id, Affiliation, visibility) VALUES (2, "Democrat", "true");

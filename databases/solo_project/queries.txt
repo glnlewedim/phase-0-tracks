@@ -1,0 +1,15 @@
+select * from party_affiliation
+
+1|Democrat|true
+2|Democrat|true
+
+UPDATE politician SET age=66 WHERE name="Elizabeth Warren";
+
+SELECT * FROM politician, party_affiliation  WHERE Politician.house_or_senate_id = house_or_senate_id
+
+SELECT politician.name, party_affiliation.affiliation, politician.age FROM politician JOIN party_Affiliation ON Politician.house_or_senate_id = house_or_senate_id
+
+
+DELETE FROM politcian WHERE id=1;
+
+SELECT politician.name, party_affiliation.affiliation FROM politician JOIN party_affiliation ON politician.house_or_senate_id = party_affiliation.house_or_senate_id
